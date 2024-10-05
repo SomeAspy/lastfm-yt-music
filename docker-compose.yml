@@ -1,3 +1,4 @@
+name: YTM-LFM-Builder-Container
 services:
   environment:
     build:

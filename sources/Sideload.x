@@ -1,4 +1,4 @@
-#import "../headers/Youtube/YTAlertView.h"
+#import "../headers/YouTube/YTAlertView.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <rootless.h>
@@ -23,15 +23,6 @@
 @property (nonatomic, copy) void (^completion)(void);
 
 @end
-
-int __isOSVersionAtLeast(int major, int minor, int patch) {
-	NSOperatingSystemVersion version;
-	version.majorVersion = major;
-	version.minorVersion = minor;
-	version.patchVersion = patch;
-
-	return [[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:version];
-}
 
 static NSString* accessGroupID() {
 	NSDictionary *query = [NSDictionary

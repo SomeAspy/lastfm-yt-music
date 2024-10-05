@@ -12,10 +12,12 @@
 
 ## Setup - Scripted
 
-With docker installed on the system, run `build.sh`
+- Fill out the `LASTFM_API_KEY` and `LASTFM_API_SECRET` variables in `Makefile`
+= With docker installed on the system, run `build.sh`
 
 ## Setup - Manual
 - Fill out the `LASTFM_API_KEY` and `LASTFM_API_SECRET` variables in `Makefile`
+- Install [Theos](https://github.com/theos/theos)
 - Build with `[make|gmake] clean package FINALPACKAGE=1`
 
 
